@@ -1,0 +1,11 @@
+version: 1.0
+runtime: python311
+build:
+  commands:
+    build:
+      - python3 -m pip install -r requirements.txt
+run:
+  pre-run:
+    # This ensures dependencies are available in the final execution environment
+    - python3 -m pip install -r requirements.txt
+  command: gunicorn -w 10 -b 0.0.0.0:8080 app:app

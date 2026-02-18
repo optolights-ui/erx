@@ -1,0 +1,7 @@
+Flask==2.2.5
+werkzeug==2.2.3
+flask_sslify==0.1.5
+python-telegram-bot==20.0
+gunicorn==21.2.0
+requests==2.31.0
+urllib3<2
